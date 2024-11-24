@@ -1,0 +1,19 @@
+button{
+    padding: 10px;
+    border-radius: 10px;
+    width: 90px;
+    font-weight: 700;
+    border: 1px solid wheat;
+}
+#green{
+    background-color: green;
+    color: white;
+}
+#red{
+    background-color: red;
+    color: white;
+}
+#blue{
+    background-color: blue;
+    color: white;
+}
