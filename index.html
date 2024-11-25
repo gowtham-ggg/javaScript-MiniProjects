@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+        }
+
+        .background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            padding: 30px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5); 
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #a9d6ff; 
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8); 
+        }
+
+        a {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 12px 25px;
+            border: 2px solid #ffffff;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            background-color: rgba(173, 216, 230, 0.3); 
+            backdrop-filter: blur(5px);
+        }
+        a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            color: #000000; 
+            transform: translateY(-5px) scale(1.05);
+            border-color: #a9d6ff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+        ul li{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <video class="background-video" autoplay muted loop>
+        <source src="forest.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="container">
+        <h1>JS MiniProjects</h1>
+        <ul>
+            <li><a href="colorFlipper/index.html" target="_blank">Color Flipper</a></li>
+            <li><a href="FeedBack/index.html" target="_blank">Feed Back</a></li>
+            <li><a href="movieTrailer/index.html" target="_blank">Movie Trailer</a></li>
+            <li><a href="Random Image/index.html" target="_blank">Random Image Generator</a></li>
+            <li><a href="Stop Watch/index.html" target="_blank">StopWatch</a></li>
+            <li><a href="TestimonialSlider/index.html" target="_blank">TestimonialSlider</a></li>
+            <li><a href="Tip Calculator/index.html" target="_blank">Tip Calculator</a></li>
+            <li><a href="ToggleDarkMode/index.html" target="_blank">DarkMode</a></li>
+            <li><a href="weatherApp/index.html" target="_blank">WeatherApp</a></li>
+        </ul>
+    </div>
+</body>
+</html>
