@@ -8,17 +8,17 @@ button.addEventListener("click", () => {
         for (let i = str.length - 1; i >= 0; i--) {
             reversed += str[i];
         }
-        return reversed;
+        return reversed === str;
     }
 
-    const inputString = input;
-    const result = isPalindrome(input);
+    const inputString = input.toLowerCase();
+    const result = isPalindrome(inputString);
 
-    if (result === inputString) {
+    if (result) {
         display.value = "Is Palindrome";
         display.style.color = "#4CAF50";
     } else {
-        display.value = "Is Not Palindrome"; 
+        display.value = "Is Not Palindrome";
         display.style.color = "red";
     }
 });
